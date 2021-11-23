@@ -15,6 +15,7 @@ function PortfoliosPage() {
 
         if(button === 'All'){
             setMenuItems(portfolios);
+            setButtons(portfolios);
             return;
         }
 
