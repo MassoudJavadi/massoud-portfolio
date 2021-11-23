@@ -36,7 +36,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" onClick={() => navToggle && setNavToggle(!navToggle)}>
         <Sidebar navToggle={navToggle} />
 
         <div className="theme">
