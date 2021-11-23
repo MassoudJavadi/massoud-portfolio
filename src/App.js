@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { useEffect } from "react";
 import Sidebar from "./Components/Sidebar";
@@ -10,7 +11,8 @@ import PortfoliosPage from './Pages/PortfoliosPage';
 import ContactPage from './Pages/ContactPage';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
-import {BrowserRouter as Router , Route} from "react-router-dom";
+import { Route, Switch as Switching } from "react-router";
+import Switch from '@material-ui/core/Switch'
 import { IconButton } from "@material-ui/core";
 
 
@@ -34,7 +36,7 @@ function App() {
   }
 
   return (
-    <div className="App" onClick={() => navToggle && setNavToggle(!navToggle)}>
+    <div className="App">
         <Sidebar navToggle={navToggle} />
 
         <div className="theme">
@@ -43,7 +45,7 @@ function App() {
                 <Brightness4Icon />
               </div>
               <div className="right-content">
-                <Router
+                <Switch
                   value=""
                   checked={checked}
                   inputProps={{ 'aria-label': '' }}
@@ -67,11 +69,9 @@ function App() {
             <div className="line-2"></div>
             <div className="line-3"></div>
             <div className="line-4"></div>
-            
           </div>
 
-          <Router>
-          
+          <Switching>
             <Route path="/" exact>
               <HomePage />
             </Route>
@@ -87,8 +87,7 @@ function App() {
             <Route path="/contact" exact>
               <ContactPage />
             </Route>
-            
-          </Router>
+          </Switching>
 
         </MainContentStyled>
     </div>
@@ -101,10 +100,6 @@ const MainContentStyled = styled.main`
   min-height: 100vh;
   @media screen and (max-width:1200px){
     margin-left: 0;
-  }
-
-  .theme{
-    
   }
   .lines{
     position: absolute;
@@ -119,9 +114,6 @@ const MainContentStyled = styled.main`
       min-height: 100vh;
       background-color: var(--border-color);
     }
-
-
-
   }
 `;
 
