@@ -9,7 +9,7 @@ const allButtons = ['All', ...new Set(portfolios.map(item => item.category))]
 
 function PortfoliosPage() {
     const [menuItem, setMenuItems] = useState(portfolios);
-    const [button, setButtons] = useState(allButtons);
+    const button, = allButtons;
 
     const filter = (button) => {
 
