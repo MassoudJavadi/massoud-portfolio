@@ -10,7 +10,7 @@ import PortfoliosPage from './Pages/PortfoliosPage';
 import ContactPage from './Pages/ContactPage';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
-import {BrowserRouter as Router Route} from "react-router-dom";
+import {BrowserRouter as Router , Route} from "react-router-dom";
 import { IconButton } from "@material-ui/core";
 
 
