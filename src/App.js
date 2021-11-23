@@ -71,7 +71,7 @@ function App() {
           </div>
 
           <Router>
-          <Switch>
+          
             <Route path="/" exact>
               <HomePage />
             </Route>
@@ -87,7 +87,7 @@ function App() {
             <Route path="/contact" exact>
               <ContactPage />
             </Route>
-            </Switch>
+            
           </Router>
 
         </MainContentStyled>
