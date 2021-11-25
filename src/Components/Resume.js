@@ -43,7 +43,7 @@ function Resume() {
                     />
                     <ResumeItem 
                         year={'2012 - 2017'} 
-                        title={'Computer Science Degree'}
+                        title={'Software Engineering Degree'}
                         subTitle={'University of Isfahan'}
                         text={'I have some experience of coding in C, C++, Java and Android and also UML Design in this period. I have graduated from highschool in the "Computer Engineering(Software Engineering)" field degree with final rate of 14.30. '} 
                     />
